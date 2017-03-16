@@ -1,0 +1,22 @@
+package except;
+
+public class Calculator {
+	public static int add(int x, int y) throws 백을넘는오류{
+		
+		int result = x + y;
+		
+		// 예외 상황 1 : 절대로 합의 결과가 100은 넘어서는 안된다.
+		if(result > 100)
+			//예외 오류 발생->내가 조치해야하나?(X)
+			throw new 백을넘는오류();
+		
+		return result;
+	}
+	
+	public static int sub(int x, int y){
+		
+		int result = x - y;
+		
+		return result;
+	}	
+}
